@@ -6,35 +6,45 @@ id: art
 <div class="container two-col">
 
   <aside>
-    <strong>[ {{ mainHeaderTitle }} ]</strong>
-    <nav class="slash-list">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/art/">Art</a></li>
-      </ul>
-    </nav>
-
-    <h2>Dates:</h2>
-    <nav class="slash-list date-list">
-      <ul>
-        {% for year in collections.artYears %}
-          <li>
-            <a href="/art/{{ year }}">{{ year }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
-    
-    <h2>Tagged:</h2>
-    <nav class="tag-list">
-      <ul>
-        {% for artTag in collections.artTags %}
-          <li>
-            <a href="/art/tagged/{{ artTag.url }}">{{ artTag.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
+    <strong class="mini-title"><a href="/">[ {{ mainHeaderTitle }} ]</a></strong>
+    <div class="desktop">
+      <nav class="slash-list">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/art/">Art</a></li>
+        </ul>
+      </nav>
+      <h2>Dates:</h2>
+      <nav class="slash-list date-list">
+        <ul>
+          {% for year in collections.artYears %}
+            <li>
+              <a href="/art/{{ year }}">{{ year }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      
+      <h2>Tagged:</h2>
+      <nav class="tag-list">
+        <ul>
+          {% for artTag in collections.artTags %}
+            <li>
+              <a href="/art/tagged/{{ artTag.url }}">{{ artTag.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile">
+      <nav class="slash-list">
+        <ul>
+          <li><a href="/art/">Art Home</a></li>
+          <li><a href="/art/dates/">Art By Year</a></li>
+          <li><a href="/art/tags/">Art Tags</a></li>
+        </ul>
+      </nav>
+    </div>
   </aside>
     
   <main>

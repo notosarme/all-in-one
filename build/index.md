@@ -12,7 +12,7 @@ Learn more about how the template works, and download it, on my Github here.
 
 You can make this page a liquid or html page and do whatever you wish with it. I based it on old websites "click here if you understand what fan content is" landing pages. 
 
-The basic theme of this site is designed to be very simple but appealing and functional on desktop and mobile.
+The basic theme of this site is designed to be very simple but appealing. It is designed for desktop first but is functional on mobile.
 
 Feel free to use this template as you wish. Just have common sense, and don't claim as your own.
 

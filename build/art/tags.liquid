@@ -1,0 +1,18 @@
+---
+layout: artIndex
+title: Art By Tags
+permalink: /art/tags.html
+override:tags: []
+---
+
+<div class="gallery">
+  <nav>
+    <ul>
+      {% for artTag in collections.artTags %}
+        <li>
+          <a href="/art/tagged/{{ artTag.url }}">{{ artTag.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

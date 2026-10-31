@@ -16,19 +16,7 @@
 
 <div class="container">
   <header>
-    <nav>
-      <ul>
-        <li class="button"><a href="../">Work Index</a></li>
-        {% if prev %}
-          <li class="button"><a href="../{{ prev }}/">Previous Chapter ←</a></li>
-        {% endif %}
-        
-        {% if next %}
-          <li class="button"><a href="../{{ next }}/">Next Chapter →</a></li>
-        {% endif %}
-        {% comment %} <li class="button"><button>Chapter Index</button></li> {% endcomment %}
-      </ul>
-    </nav>
+    {% render '_pagination', prev: prev, next: next %}
   </header>
   {% if number or title %}
     <h1>{{ title }}</h1>
@@ -36,16 +24,6 @@
   {% endif %}
   <main>{{ content }}</main>
   <footer>
-    <nav>
-      <ul>
-        {% if prev %}
-          <li class="button"><a href="../{{ prev }}/">Previous Chapter ←</a></li>
-        {% endif %}
-        
-        {% if next %}
-          <li class="button"><a href="../{{ next }}/">Next Chapter →</a></li>
-        {% endif %}
-      </ul>
-    </nav>
+    {% render '_pagination', prev: prev, next: next %}
   </footer>
 </div>

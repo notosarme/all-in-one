@@ -1,3 +1,7 @@
 node_modules
 test.html
 readme2
+_site
+
+.vercel
+.env*

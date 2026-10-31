@@ -1,0 +1,14 @@
+---
+  title: Wiki Tags
+  layout: wikiIndex
+  override:tags: []
+  permalink: /wiki/tags.html
+---
+
+<ul>
+  {% for wikiTag in collections.wikiTags %}
+    <li>
+      <a href="/wiki/tagged/{{ wikiTag.url }}">{{ wikiTag.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

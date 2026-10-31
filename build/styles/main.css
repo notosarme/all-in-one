@@ -26,6 +26,8 @@ h1 { pointer-events: none; }
 
 img { max-height: 100%; max-width: 100%; }
 
+.mobile { display: none; }
+
 /* MAIN STYLING */
 #main .container {
   padding: 1rem;
@@ -84,6 +86,8 @@ img { max-height: 100%; max-width: 100%; }
 #update-box ul { margin: .5rem 0; }
 
 /* TWO-COLUMN STYLING */
+
+.mini-title a { text-decoration: none; color: black; }
 
 .two-col {
   display: grid;
@@ -153,7 +157,7 @@ img { max-height: 100%; max-width: 100%; }
 
 #reading .container main {
   margin: 0 auto auto auto;
-  padding: 0 0.25em;
+  padding: 0 0.5em;
   max-width: 72em;
 }
 
@@ -437,9 +441,51 @@ button {
 
 /* MOBILE FIXES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
+  .desktop { display: none; }
+  .mobile { display: contents; }
+  .mini-title a { text-decoration: underline; }
+
   .wiki-aside {
     float: none;
     width: 90%;
+    margin: 0;
   }
+
+  .two-col {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0;
+  }
+
+  .two-col aside {
+    border-right: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 1em 1em 0.5em 1em;
+  }
+
+  .two-col .slash-list ul {
+    justify-content: center;
+  }
+
+  .gallery-card {
+    width: 150px;
+  }
+
+  .art-full,
+   #reading img {
+    max-width: 92%;
+  }
+
+  .chara-cards .card {
+    max-width: 150px;
+  }
+
+  #reading header ul,
+  #reading footer ul {
+    justify-content: center;
+    padding: 0;
+  }
+
 }

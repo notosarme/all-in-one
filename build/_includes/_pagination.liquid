@@ -1,0 +1,27 @@
+<nav>
+  <div class="desktop">
+    <ul>
+      <li class="button"><a href="../">Work Index</a></li>
+      {% if prev %}
+        <li class="button"><a href="../{{ prev }}/">Previous Chapter ←</a></li>
+      {% endif %}
+    
+      {% if next %}
+        <li class="button"><a href="../{{ next }}/">Next Chapter →</a></li>
+      {% endif %}
+    </ul>
+  </div>
+
+  <div class="mobile">
+    <ul>
+      <li class="button"><a href="../">Work Index</a></li>
+      {% if prev %}
+        <li class="button"><a href="../{{ prev }}/">← Prev</a></li>
+      {% endif %}
+    
+      {% if next %}
+        <li class="button"><a href="../{{ next }}/">Next →</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</nav>

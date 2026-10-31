@@ -6,6 +6,8 @@ title: Untitled Story
 info-header-name: Info
 gallery-header-name: Gallery
 ---
+  {% assign chapters = collections.chaptersByStory[page.fileSlug] %}
+  
   <div class="container two-col">
 
   <aside>
@@ -17,17 +19,18 @@ gallery-header-name: Gallery
       </ul>
     </nav>
 
-    <h2>Chapters</h2>
-    {% assign chapters = collections.chaptersByStory[page.fileSlug] %}
-    <ul>
-      {% for chapter in chapters %}
-        <li>
-          <a href="{{ chapter.url }}">
-            Chapter {{ chapter.data.chapter }}
-          </a>
-        </li>
-      {% endfor %}
+    <div class="desktop">
+      <h2>Chapters</h2>
+      <ul>
+        {% for chapter in chapters %}
+          <li>
+            <a href="{{ chapter.url }}">
+              Chapter {{ chapter.data.chapter }}
+            </a>
+          </li>
+        {% endfor %}
       </ul>
+    </div>
   </aside>
     
   <main>
@@ -61,6 +64,19 @@ gallery-header-name: Gallery
           {% endif %}
         </span>
         <p></p>
+      </div>
+
+      <div class="mobile">
+        <h2>Chapters</h2>
+        <ul>
+          {% for chapter in chapters %}
+            <li>
+              <a href="{{ chapter.url }}">
+                Chapter {{ chapter.data.chapter }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
 
       <div id="novel-content">{{ content }}</div>
