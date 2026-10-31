@@ -3,8 +3,6 @@ title: Dracula
 date: 1995-10-01
 last-updated: 1995-09-24
 
-series: bram-stoker
-seriesTitle: Bram Stoker
 r18: true
 
 categories: 
@@ -19,7 +17,9 @@ imgs:
   - "/assets/novel-imgs/dracula-cover.jpg"
   
 blurb: Dracula by Bram Stoker is a Gothic horror novel published in 1897. Told through letters, diary entries, and newspaper articles, the story follows solicitor Jonathan Harker's terrifying encounter with Count Dracula in Transylvania. When the vampire Count travels to England and begins preying on victims in Whitby, a small group led by Professor Abraham Van Helsing must hunt him down
-tags: novel
+
+
+override:tags: [novel]
 layout: novel
 ---
 

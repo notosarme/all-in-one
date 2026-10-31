@@ -1,12 +1,13 @@
 ---
 layout: main
+override:tags: []
 ---
 <p>You can sort the folders of your /novels/ folder however you wish, but I recommend having a folder for a series or fandom, and then folders for individual fics inside that.</p>
-{% for fandom in collections.novels %}
-  <h2>{{ fandom.title }}</h2>
+{% for series in collections.novels %}
+  <h2>{{ series.title }}</h2>
 
   <dl class="novel-list">
-  {% for fic in fandom.stories %}
+  {% for fic in series.stories %}
     <dt>
       <strong><a href="{{ fic.url }}">{{ fic.data.title }}</a></strong>
       {% if fic.data.r18 %}🔞{% endif %}

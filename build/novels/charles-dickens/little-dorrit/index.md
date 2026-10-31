@@ -3,8 +3,6 @@ title: Little Dorrit
 date: 1994-02-01
 last-updated: 1994-02-26
 
-series: charles-dickens
-seriesTitle: Charles Dickens
 r18: false
 
 categories: 
@@ -19,7 +17,8 @@ imgs:
   - "/assets/novel-imgs/little-dorrit-chp-2.jpg"
   
 blurb: Little Dorrit by Charles Dickens is a novel published in serial form between 1855 and 1857. Amy Dorrit, born and raised in London's Marshalsea debtors' prison, captures the attention of Arthur Clennam upon his return from twenty years abroad. As Arthur investigates a cryptic message from his dying father, their lives intertwine amid questions of debt, family secrets, and social class.
-tags: novel
+
+override:tags: [novel]
 layout: novel
 ---
 

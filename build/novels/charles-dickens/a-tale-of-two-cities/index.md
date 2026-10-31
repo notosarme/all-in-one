@@ -2,9 +2,6 @@
 title: A Tale of Two Cities
 date: 1994-01-01
 last-updated: 1994-07-01
-
-series: charles-dickens
-seriesTitle: Charles Dickens
 r18: false
 
 categories: 
@@ -19,7 +16,8 @@ imgs:
   - "/assets/novel-imgs/a-tale-of-two-cities-chp-2.jpg"
   
 blurb: A Tale of Two Cities by Charles Dickens is a historical novel published in 1859. Set in London and Paris during the tumultuous French Revolution, it follows Dr. Alexandre Manette after his mysterious 18-year imprisonment in the Bastille and his reunion with his daughter Lucie.
-tags: novel
+
+override:tags: [novel]
 layout: novel
 ---
 

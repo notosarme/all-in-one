@@ -31,6 +31,8 @@ Some people use [status.cafe](https://status.cafe) to have an update log. You ca
 
 By the way, a good way to get your site out there is to join webrings, and also comment on the profiles or guestbooks of other sites you admire! An example is the [fanfiction webring](https://ficring.neocities.org). You can also create 88x31 buttons or 200x40 banners to advertise your site by letting other people link to you.
 
+You can also make RSS feeds that people can subscribe to, there's one set-up for the novels/fics collection here: [feed.xml](/feed.xml)
+
 <div class="center">
   <a href="https://atabook.org"><img src="/assets/guestbook.gif"></a>
 </div>

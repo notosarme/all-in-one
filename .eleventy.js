@@ -100,11 +100,11 @@ module.exports = (eleventyConfig) => {
   // FILTER - BY CATEGORY
   eleventyConfig.addFilter("filterByCategory", function (novels, cat) {
     cat = cat.toLowerCase();
-    let result = novels.filter((p) => {
-      let cats = p.data.categories.map((s) => s.toLowerCase());
+
+    return (novels || []).filter((p) => {
+      let cats = (p.data.categories || []).map(s => s.toLowerCase());
       return cats.includes(cat);
     });
-    return result;
   });
 
   // ARTWORK COLLECTION
