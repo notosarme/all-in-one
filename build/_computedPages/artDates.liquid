@@ -1,0 +1,28 @@
+---
+layout: art
+pagination:
+  data: collections.artYears
+  size: 1
+  alias: year
+
+permalink: "/art/{{ year }}/index.html"
+eleventyComputed:
+  title: "{{ year }} Art"
+---
+
+<div class="gallery">
+  {% assign artDates = collections.artwork | sortByYear: year %}
+
+  {% for art in artDates %}
+  <div class="gallery-card">
+    <a href="{{ art.url }}">
+      <figure>
+        <img src="{{ art.data.src }}">
+        <figcaption>{{ art.data.title }}</figcaption>
+      </figure>
+    </a>
+  </div>
+  {% endfor %}
+
+
+</div>

@@ -1,0 +1,26 @@
+---
+  title: Wiki Main Page
+  layout: main
+  override:tags: []
+---
+
+<p>
+  You can use this wiki index page if you don't want to sort by anything, for example you only have a handful of characters. 
+  Just delete the other "index.liquid" page in this folder, and rename this one to "index.liquid".
+</p>
+
+<div class="chara-cards center">
+  {% assign sortedWiki = collections.wiki | alphabeticize %}
+  {% for item in sortedWiki %}
+    <div class="card">
+      <a href="{{ item.url }}">
+        {% if item.data.mainImg %}
+          <img src="{{ item.data.mainImg }}" />
+        {% else %}
+          <img src="/assets/no-img-default.jpg" />
+        {% endif %}
+        <div class="text"><strong>{{ item.data.name }}</strong></div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

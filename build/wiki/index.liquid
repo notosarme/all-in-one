@@ -1,0 +1,35 @@
+---
+  title: Wiki Main Page
+  layout: wikiIndex
+  override:tags: []
+---
+
+<p>
+  By the way! 
+  Everything in the folder "wiki" will automatically be tagged with the layout "wiki" and be added to the collection "wiki", unless you override it.
+  See this page's header for an example of overriding. 
+  So you can make as many folders in here as you want and it'll all be tagged for you. 
+  To tag for series, you can either manually tag (example on prowl.md), or create a folder for the series and a json tagger (example in the other folders). 
+  As always, you can mix-and-match in case you want something tagged with multiple series!
+</p>
+<p>
+  The "no photo" is automatically applied if there is no "main image" assigned to a page. You can change what this asset looks like by replacing /assets/no-img-default.jpg
+</p>
+
+<h2>All Characters</h2>
+
+<div class="chara-cards">
+  {% assign sortedWiki = collections.wiki | alphabeticize %}
+  {% for item in sortedWiki %}
+    <div class="card">
+      <a href="{{ item.url }}">
+        {% if item.data.mainImg %}
+          <img src="{{ item.data.mainImg }}" />
+        {% else %}
+          <img src="/assets/no-img-default.jpg" />
+        {% endif %}
+        <div class="text"><strong>{{ item.data.name }}</strong></div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,51 @@
+---
+  chapter_total: 0
+  layout: base
+  id: reading
+---
+{% assign url_segments = page.url | split: '/' %}
+{% assign story_title = url_segments[3] %}
+{% assign chapters = collections.chaptersByStory[story_title] %}
+{% assign chapter_total = chapters.size %}
+{% if chapter > 1 %}
+  {% assign prev = chapter | minus: 1 %}
+{% endif %}
+{% if chapter < chapter_total %}
+  {% assign next = chapter | plus: 1 %}
+{% endif %}
+
+<div class="container">
+  <header>
+    <nav>
+      <ul>
+        <li class="button"><a href="../">Work Index</a></li>
+        {% if prev %}
+          <li class="button"><a href="../{{ prev }}/">Previous Chapter ←</a></li>
+        {% endif %}
+        
+        {% if next %}
+          <li class="button"><a href="../{{ next }}/">Next Chapter →</a></li>
+        {% endif %}
+        {% comment %} <li class="button"><button>Chapter Index</button></li> {% endcomment %}
+      </ul>
+    </nav>
+  </header>
+  {% if number or title %}
+    <h1>{{ title }}</h1>
+    <hr />
+  {% endif %}
+  <main>{{ content }}</main>
+  <footer>
+    <nav>
+      <ul>
+        {% if prev %}
+          <li class="button"><a href="../{{ prev }}/">Previous Chapter ←</a></li>
+        {% endif %}
+        
+        {% if next %}
+          <li class="button"><a href="../{{ next }}/">Next Chapter →</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </footer>
+</div>

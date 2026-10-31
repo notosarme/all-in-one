@@ -1,0 +1,82 @@
+---
+layout: base
+id: novel
+
+title: Untitled Story
+info-header-name: Info
+gallery-header-name: Gallery
+---
+  <div class="container two-col">
+
+  <aside>
+    <strong>[ {{ title }} ]</strong>
+    <nav class="slash-list">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/fics/">Fics</a></li>
+      </ul>
+    </nav>
+
+    <h2>Chapters</h2>
+    {% assign chapters = collections.chaptersByStory[page.fileSlug] %}
+    <ul>
+      {% for chapter in chapters %}
+        <li>
+          <a href="{{ chapter.url }}">
+            Chapter {{ chapter.data.chapter }}
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+  </aside>
+    
+  <main>
+    <h1> {{ title }}</h1>
+
+      <div id="novel-info">
+        <h2> {{ info-header-name }} </h2>
+        <span class="date">
+          {% if date %}
+            <strong>Created: </strong> {{ date | textDate }}<br/>
+          {% endif %}
+        </span>
+        <span class="date">
+          {% if last-updated %}
+            <strong>Last Updated: </strong> {{ last-updated | textDate }}<br/>
+          {% endif %}
+        </span>
+        
+        <span class="tags">
+          {% if categories %}
+            <strong>Tags:</strong>
+            {% for cat in categories %}
+            <a href="/tagged/{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+            <br/>
+          {% endif %}
+        </span>
+        <span class="rating">
+          {% if r18 %}
+            <strong>Warning:</strong> 🔞<br/>
+          {% endif %}
+        </span>
+        <p></p>
+      </div>
+
+      <div id="novel-content">{{ content }}</div>
+
+      <div id="novel-gallery">
+        {% if imgs %}
+          <h2> {{ gallery-header-name }}</h2>
+          <div class="img-gallery">
+            {% for img in imgs %}
+              <span class="item"><a href="{{img}}"><img src="{{img}}" alt="{{img}}"/></a></span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+  </main>
+
+  </div>
+
+

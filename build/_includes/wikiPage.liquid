@@ -1,0 +1,82 @@
+---
+layout: base
+id: wiki
+title: Character Page
+---
+
+  <div class="container">
+    <h1>{{ name }}</h1>
+    <aside class="wiki-aside">
+        <table class="wiki-table">
+          <tbody>
+
+            {% if mainImg %}<tr>
+              <td colspan="2"><img src="{{ mainImg }}"/></td>
+            </tr>{% endif %}
+
+            {% if caption %}<tr class="wiki-caption">
+              <td colspan="2">{{ caption }}</td>
+            </tr>{% endif %}
+
+            {% if alias %}<tr>
+              <th>Aliases</th><td>{{ alias }}</td>
+            </tr>{% endif %}
+
+            {% if pronouns %}<tr>
+              <th>Pronouns</th><td>{{ pronouns }}</td>
+            </tr>{% endif %}
+
+            {% if age %}<tr>
+              <th>Age</th><td>{{ age }}</td>
+            </tr>{% endif %}
+
+            {% if race %}<tr>
+              <th>Race</th><td>{{ race }}</td>
+            </tr>{% endif %}
+
+            {% if affiliation %}<tr>
+              <th>Affiliation</th><td>{{ affiliation }}</td>
+            </tr>{% endif %}
+
+            {% if height %}<tr>
+              <th>Height</th><td>{{ height }}</td>
+            </tr>{% endif %}
+
+            {% comment %} 
+
+            To add a new trait, 
+            put this wherever you'd like it to show up in the table:
+            
+            {% if TRAIT %}<tr>
+            <th>Description</th><td>{{ TRAIT }}</td>
+            </tr> {% endif %}
+
+            {% endcomment %}
+          </tbody>
+        </table>
+
+      </aside>
+      <main>
+        {% if quote %}
+          <div class="wiki-quote">
+            <span>{{ quote }}</span>
+            <cite>{{ quoteSource }}</cite>
+          </div>
+        {% endif %}
+          <div>
+            {{ content }}
+          </div>
+          {% if gallery %}
+          <div>
+            <h2>Gallery</h2>
+            <div class="wiki-gallery">
+              {% for image in gallery %}
+                <a href="{{ image }}"><img loading="lazy" src="{{ image }}" /></a>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+      </main>
+      
+  </div>
+

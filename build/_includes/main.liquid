@@ -1,0 +1,15 @@
+---
+layout: base
+id: main
+---
+
+<div class="container">
+  <header>
+    <h1>{{ mainHeaderTitle }}</h1>
+    <p>{{blurb}}</p>
+  {% render '_main-menu' %}
+  </header>
+
+  {{ content }}
+
+</div>

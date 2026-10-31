@@ -1,0 +1,39 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "YOUR SITE TITLE HERE",
+    "subtitle": "YOUR SITE BLURB HERE",
+    "url": "https://YOUR-URL.com/",
+    "feedUrl": "https://YOUR-URL.com/feed.xml",
+    "author": {
+      "name": "YOUR NAME",
+      "email": "EMAIL@YOUR-EMAIL.COM"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.novel | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for novel in collections.novel | reverse %}
+  {% set absolutePostUrl %}{{ novel.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ novel.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ novel.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ novel.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

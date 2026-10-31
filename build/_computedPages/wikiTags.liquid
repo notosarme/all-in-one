@@ -1,0 +1,27 @@
+---
+layout: wikiIndex
+pagination:
+  data: collections.wikiTags
+  size: 1
+  alias: wikiTag
+
+permalink: "/wiki/tagged/{{ wikiTag.url | slugify }}/index.html"
+eleventyComputed:
+  title: "Tagged: {{ wikiTag.title }}" 
+---
+  
+<div class="chara-cards">
+  {% assign sortedWiki = wikiTag.wikiCharas | alphabeticize %}
+  {% for item in sortedWiki %}
+    <div class="card">
+      <a href="{{ item.url }}">
+        {% if item.data.mainImg %}
+          <img src="{{ item.data.mainImg }}" />
+        {% else %}
+          <img src="/assets/no-img-default.jpg" />
+        {% endif %}
+        <div class="text"><strong>{{ item.data.name }}</strong></div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

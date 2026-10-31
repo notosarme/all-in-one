@@ -1,0 +1,22 @@
+---
+layout: art
+title: Art
+---
+
+<div class="gallery">
+  <div>
+    <p>For art, you can tag things individually, and/or you can make a json file in a folder to automatically tag everything in that folder with one or more tags! You can mix and match the methods, however you want. This then automatically makes tagged pages, with a matching alphabeticized tag list on the side.</p>
+    <p>The consectetur, dolor, and ipsum folders have an example of a folder-wide tag. lorem and sit-amet have examples of manual tags. /consectetur/500-700/ has an example of mix and match.</p>
+  </div>
+  
+  {% for art in collections.artwork reversed %}
+    <div class="gallery-card">
+      <a href="{{ art.url }}">
+        <figure>
+          <img loading="lazy" src="{{ art.data.src }}">
+          <figcaption>{{ art.data.title }}</figcaption>
+        </figure>
+      </a>
+    </div>
+  {% endfor %}
+</div>

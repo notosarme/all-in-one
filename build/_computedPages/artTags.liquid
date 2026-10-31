@@ -1,0 +1,24 @@
+---
+layout: art
+pagination:
+  data: collections.artTags
+  size: 1
+  alias: artTag
+
+permalink: "/art/tagged/{{ artTag.url | slugify }}/index.html"
+eleventyComputed:
+  title: "Tagged: {{ artTag.title }}" 
+---
+  
+<div class="gallery">
+  {% for art in artTag.artworks %}  
+    <div class="gallery-card">
+      <a href="{{ art.url }}">
+        <figure>
+          <img loading="lazy" src="{{ art.data.src }}">
+          <figcaption>{{ art.data.title }}</figcaption>
+        </figure>
+      </a>
+    </div>
+  {% endfor %}
+</div>
