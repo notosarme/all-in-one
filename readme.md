@@ -158,7 +158,7 @@ Neocities has a useful option called [Deploy to Neocities](https://github.com/ma
 - Create a New repository secret, call it `NEOCITIES_API_TOKEN`, and for the secret, put the API key you copied.
 - Now whenever you push changes to Github, it should send those changes to Neocities for you! 
 - Quick note on the `neocities.yml` code:
-  - `branches: -main` is saying that its only looking at pushes done to your "main" branch. Assuming you're not using an older version of git that calls it "master", this is fine.
-  - `api_token: ${{ secrets.NEOCITIES_API_TOKEN }}` is using the name of the github secret you created
+  - `branches: -main` is saying that its only looking at pushes done to your "main" branch. Assuming you're not using an old version of git that calls it "master", this is fine.
+  - `api_token: ${{ secrets.NEOCITIES_API_TOKEN }}` is using the name of the Github Secret you created
   - `dist_dir: _site` is the name of the folder that its going to look at to send to Neocities.
   - `cleanup: false` is looking at if it should delete files that don't exist in what you're pushing. It's a good idea to set this to `true` at least sometimes to do a cleanup.
