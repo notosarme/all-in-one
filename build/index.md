@@ -8,7 +8,7 @@ You should have HTML and CSS knowledge in order to use this template, and a will
 
 Some information about 11ty can be found at [11ty.rocks](https://11ty.rocks) and [learneleventy.dev](https://learneleventy.dev)
 
-Learn more about how the template works, and download it, on my Github here.
+Learn more about how the template works, and download it, [on my Github](https://github.com/notosarme/all-in-one).
 
 You can make this page a liquid or html page and do whatever you wish with it. I based it on old websites "click here if you understand what fan content is" landing pages. 
 
