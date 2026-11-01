@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>YOUR SITE TITLE HERE</title>
+  <subtitle>YOUR SITE BLURB HERE</subtitle>
+  <link href="https://YOUR-URL.com/feed.xml" rel="self"/>
+  <link href="https://YOUR-URL.com/"/>
+  <updated>1995-10-01T00:00:00Z</updated>
+  <id>https://YOUR-URL.com/</id>
+  <author>
+    <name>YOUR NAME</name>
+    <email>EMAIL@YOUR-EMAIL.COM</email>
+  </author>
+  
+  <entry>
+    <title>Dracula</title>
+    <link href="https://your-url.com/novels/bram-stoker/dracula/"/>
+    <updated>1995-10-01T00:00:00Z</updated>
+    <id>https://your-url.com/novels/bram-stoker/dracula/</id>
+    <content type="html">&lt;h2&gt;Outline&lt;/h2&gt;
+&lt;p&gt;&amp;quot;Info&amp;quot; and &amp;quot;Gallery&amp;quot; are automatically generated with information inputted. &amp;quot;Outline&amp;quot; and &amp;quot;Characters&amp;quot; are just some suggested categories, written in with Markdown in the body. Feel free to put as much or little stuff here as you want.&lt;/p&gt;
+&lt;h2&gt;Characters&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Character One:&lt;/strong&gt; Phasellus nec est erat. Proin sodales lorem felis, et iaculis est sollicitudin at. Proin consequat nisl non accumsan consequat. Etiam iaculis enim a elit mattis, eget bibendum nisi pretium. Nam ut condimentum quam. Suspendisse interdum tristique aliquam. Nam ut erat sit amet erat porttitor convallis id et felis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Character Two:&lt;/strong&gt; Nunc efficitur eget ante auctor semper. Ut ipsum dui, tristique et dolor vel, luctus mattis justo. Nam dignissim molestie cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus pellentesque luctus leo ut maximus. Curabitur lorem nisl, dignissim sed ultrices auctor, ultricies eget dui.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Character Three:&lt;/strong&gt; Vivamus tempus diam eu arcu sollicitudin, in vehicula arcu consectetur. Curabitur commodo mauris a pretium aliquet. Nullam suscipit lorem quam.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Little Dorrit</title>
+    <link href="https://your-url.com/novels/charles-dickens/little-dorrit/"/>
+    <updated>1994-02-01T00:00:00Z</updated>
+    <id>https://your-url.com/novels/charles-dickens/little-dorrit/</id>
+    <content type="html">&lt;h2&gt;Outline&lt;/h2&gt;
+&lt;p&gt;&amp;quot;Info&amp;quot; and &amp;quot;Gallery&amp;quot; are automatically generated with information inputted. &amp;quot;Outline&amp;quot; and &amp;quot;Characters&amp;quot; are just some suggested categories, written in with Markdown in the body. Feel free to put as much or little stuff here as you want.&lt;/p&gt;
+&lt;h2&gt;Characters&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Character One:&lt;/strong&gt; Phasellus nec est erat. Proin sodales lorem felis, et iaculis est sollicitudin at. Proin consequat nisl non accumsan consequat. Etiam iaculis enim a elit mattis, eget bibendum nisi pretium. Nam ut condimentum quam. Suspendisse interdum tristique aliquam. Nam ut erat sit amet erat porttitor convallis id et felis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Character Two:&lt;/strong&gt; Nunc efficitur eget ante auctor semper. Ut ipsum dui, tristique et dolor vel, luctus mattis justo. Nam dignissim molestie cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus pellentesque luctus leo ut maximus. Curabitur lorem nisl, dignissim sed ultrices auctor, ultricies eget dui.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Character Three:&lt;/strong&gt; Vivamus tempus diam eu arcu sollicitudin, in vehicula arcu consectetur. Curabitur commodo mauris a pretium aliquet. Nullam suscipit lorem quam.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>A Tale of Two Cities</title>
+    <link href="https://your-url.com/novels/charles-dickens/a-tale-of-two-cities/"/>
+    <updated>1994-01-01T00:00:00Z</updated>
+    <id>https://your-url.com/novels/charles-dickens/a-tale-of-two-cities/</id>
+    <content type="html">&lt;h2&gt;Outline&lt;/h2&gt;
+&lt;p&gt;&amp;quot;Info&amp;quot; and &amp;quot;Gallery&amp;quot; are automatically generated with information inputted. &amp;quot;Outline&amp;quot; and &amp;quot;Characters&amp;quot; are just some suggested categories, written in with Markdown in the body. Feel free to put as much or little stuff here as you want.&lt;/p&gt;
+&lt;h2&gt;Characters&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Character One:&lt;/strong&gt; Phasellus nec est erat. Proin sodales lorem felis, et iaculis est sollicitudin at. Proin consequat nisl non accumsan consequat. Etiam iaculis enim a elit mattis, eget bibendum nisi pretium. Nam ut condimentum quam. Suspendisse interdum tristique aliquam. Nam ut erat sit amet erat porttitor convallis id et felis.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Character Two:&lt;/strong&gt; Nunc efficitur eget ante auctor semper. Ut ipsum dui, tristique et dolor vel, luctus mattis justo. Nam dignissim molestie cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus pellentesque luctus leo ut maximus. Curabitur lorem nisl, dignissim sed ultrices auctor, ultricies eget dui.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Character Three:&lt;/strong&gt; Vivamus tempus diam eu arcu sollicitudin, in vehicula arcu consectetur. Curabitur commodo mauris a pretium aliquet. Nullam suscipit lorem quam.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
