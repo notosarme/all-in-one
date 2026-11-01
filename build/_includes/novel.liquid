@@ -51,7 +51,7 @@ title: Untitled Story
           {% if categories %}
             <strong>Tags:</strong>
             {% for cat in categories %}
-            <a href="/tagged/{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+            <a href="/novels/tagged/{{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
             <br/>
           {% endif %}
