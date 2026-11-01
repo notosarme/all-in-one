@@ -4,6 +4,8 @@ A preview of the site is available [here on Vercel](https://all-in-one-template-
 
 You are free to use this site and modify it however you wish. Credit is appreciated, either to this Github or my website [ectobe.ing](https://ectobe.ing). Do not claim as your own, and please redirect people to this project for as long as it remains up, if you are asked about the code. Thanks!
 
+<a href='https://ko-fi.com/F2F8UDSNJ' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi4.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 ## Table of Contents
 1. [Set Up](#set-up)
 2. [Basic Usage](#basic-usage)
