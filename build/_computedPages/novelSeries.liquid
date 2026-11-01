@@ -1,0 +1,23 @@
+---
+pagination:
+  data: collections.novels
+  size: 1
+  alias: novelSeries
+
+permalink: "/novels/series/{{ novelSeries.title | slugify }}/index.html"
+
+eleventyComputed:
+  title: "Series: {{ novelSeries.title }}"
+
+layout: novelIndex
+---
+<dl class="novel-list">
+  {% for fic in novelSeries.stories reversed %}
+  <dt>
+    <strong><a href="{{ fic.url }}">{{ fic.data.title }}</a></strong>
+    {% if fic.data.r18 %}🔞{% endif %}
+    {% if fic.data.last-updated %}<em> - Last Updated: {{ fic.data.last-updated | textDate }}</em>{% endif %}
+  </dt>
+  <dd>{{ fic.data.blurb }}</dd>
+  {% endfor %}
+</dl>

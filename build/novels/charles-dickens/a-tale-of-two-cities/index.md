@@ -5,7 +5,6 @@ last-updated: 1994-07-01
 r18: false
 
 categories: 
-  - Charles Dickens
   - Historical fiction
   - France
   - London

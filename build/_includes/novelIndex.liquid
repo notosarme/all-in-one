@@ -1,0 +1,55 @@
+---
+layout: base
+id: novel
+override:tags: []
+---
+<div class="container two-col">
+
+  <aside>
+    <strong class="mini-title"><a href="/">[ {{ mainHeaderTitle }} ]</a></strong>
+    <div class="desktop">
+      <nav class="slash-list">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/novels/">Fics</a></li>
+        </ul>
+      </nav>
+      <h2>Series:</h2>
+      <nav class="tag-list">
+        <ul>
+          {% for item in collections.novels %}
+            <li>
+              <a href="/novels/series/{{ item.title | slugify }}/index.html">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      
+      <h2>Tagged:</h2>
+      <nav class="tag-list">
+        <ul>
+          {% for item in collections.categories %}
+            <li>
+              <a href="/novels/tagged/{{ item | slugify }}/index.html">{{ item }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile">
+      <nav class="slash-list">
+        <ul>
+          <li><a href="/art/">Art Home</a></li>
+          <li><a href="/art/dates/">Art By Year</a></li>
+          <li><a href="/art/tags/">Art Tags</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+    
+  <main>
+    <h1> {{ title }}</h1>
+    {{ content }}
+  </main>
+
+</div>

@@ -6,7 +6,6 @@ last-updated: 1994-02-26
 r18: false
 
 categories: 
-  - Charles Dickens
   - Inheritance and succession
   - London
   - Love stories

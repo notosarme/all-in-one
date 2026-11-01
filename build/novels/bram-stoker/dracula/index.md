@@ -6,7 +6,6 @@ last-updated: 1995-09-24
 r18: true
 
 categories: 
-  - Bram Stoker
   - Historical fiction
   - Horror tales
   - London

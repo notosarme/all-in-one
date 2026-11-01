@@ -86,7 +86,7 @@ module.exports = (eleventyConfig) => {
   });
 
 
-  // COLLECTION - CATEGORIES
+  // COLLECTION - NOVEL CATEGORIES
   eleventyConfig.addCollection("categories", function (collectionApi) {
     let categories = new Set();
     let novels = collectionApi.getFilteredByTag("novel");
