@@ -4,5 +4,10 @@ id: art
 ---
 <div>
   <img class="art-full" src="{{ src }}">
+  {% if date %}
+    <span class="art-date">
+      <p>Uploaded: {{ date | textDate }}</p>
+    </span>
+  {% endif %}
   {{ content }}
 </div>

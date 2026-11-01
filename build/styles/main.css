@@ -328,6 +328,10 @@ button {
   max-height: 600px;
 }
 
+.art-date {
+  font-style: italic;
+}
+
 /* WIKI STYLES */
 
 #wiki .container {
