@@ -142,8 +142,10 @@ For Mac, you can also install from the official website [here](https://nodejs.or
 ## Using Git and Github
 
 Note: You can also use git to install this project *and* it will allow you to save variations of your site and revert changes! You can even make "branches" that allow you to make experimental changes that you can choose to apply to your main project, or discard. If you want to learn Git and GitHub, I recommend the following:
+- [A Layman's Guide To Git](https://webtuu.com/blog/04/a-laymans-introduction-to-git) - Basic written tutorial
+- [Git Basics – Branching, Merging and pushing code to Github](https://webtuu.com/blog/04/git-basics-branching-merging-push-to-github) - Slightly more detailed follow-up
 - [Git and GitHub for Poets](https://www.youtube.com/watch?v=BCQHnlnPusY) - Video tutorial
-- [A Poet's Guide to Git](https://writerly.dev) - Written tutorial 
+- [What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) - Official Git Guide
 - [Learn Git Branching](https://learngitbranching.js.org) - Interactive tutorial
 
 You can also use the [Github Desktop Client](https://desktop.github.com/download/) for a visual, non-terminal based experience.
