@@ -3,8 +3,6 @@ layout: base
 id: novel
 
 title: Untitled Story
-info-header-name: Info
-gallery-header-name: Gallery
 ---
   {% assign chapters = collections.chaptersByStory[page.fileSlug] %}
   
@@ -37,7 +35,7 @@ gallery-header-name: Gallery
     <h1> {{ title }}</h1>
 
       <div id="novel-info">
-        <h2> {{ info-header-name }} </h2>
+        <h2>Info</h2>
         <span class="date">
           {% if date %}
             <strong>Created: </strong> {{ date | textDate }}<br/>
@@ -83,7 +81,7 @@ gallery-header-name: Gallery
 
       <div id="novel-gallery">
         {% if imgs %}
-          <h2> {{ gallery-header-name }}</h2>
+          <h2>Gallery</h2>
           <div class="img-gallery">
             {% for img in imgs %}
               <span class="item"><a href="{{img}}"><img src="{{img}}" alt="{{img}}"/></a></span>
