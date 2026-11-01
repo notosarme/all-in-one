@@ -1,5 +1,7 @@
 # All-In-One Otaku Site
 
+A preview of the site is available [here on Vercel](https://all-in-one-template-site.vercel.app).
+
 You are free to use this site and modify it however you wish. Credit is appreciated, either to this Github or my website [ectobe.ing](https://ectobe.ing). Do not claim as your own, and please redirect people to this project for as long as it remains up, if you are asked about the code. Thanks!
 
 ## Table of Contents
