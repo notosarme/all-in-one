@@ -1,0 +1,13 @@
+---
+layout: novelIndex
+title: Tags List
+permalink: /novels/tags.html
+override:tags: []
+---
+<ul>
+  {% for item in collections.categories %}
+    <li>
+      <a href="/novels/tagged/{{ item | slugify }}/index.html">{{ item }}</a>
+    </li>
+  {% endfor %}
+</ul>
