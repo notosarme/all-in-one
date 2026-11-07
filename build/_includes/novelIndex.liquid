@@ -29,7 +29,7 @@ id: novel
         <ul>
           {% for item in collections.categories %}
             <li>
-              <a href="/novels/tagged/{{ item | slugify }}/index.html">{{ item }}</a>
+              <a href="/novels/tagged/{{ item | slugify }}/index.html">{{ item | title }}</a>
             </li>
           {% endfor %}
         </ul>

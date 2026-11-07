@@ -21,7 +21,7 @@ module.exports = (eleventyConfig) => {
 
   // Capitalize Every Word Filter
   eleventyConfig.addFilter("title", function (str) {
-    return str.replace(/\b\w/g, char => char.toUpperCase());
+    return str.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
   });
 
   // Remove Hypens Filter
